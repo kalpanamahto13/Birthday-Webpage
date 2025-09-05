@@ -1,0 +1,107 @@
+/* CTA Button reveal animations */
+.cta-button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, #FFF5F5, #F8F8FF);
+    color:  #B76E79;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    /* box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3); */
+    position: relative;
+    overflow: hidden;
+}
+/* 
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+} */
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+/* Content reveal animations */
+.hero-content {
+    transition: all 0.8s ease;
+}
+
+.hero-image {
+    transition: all 0.8s ease;
+}
+
+.content-revealed {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.image-revealed {
+    animation: slideInFromRight 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Confetti celebration effect */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6b6b;
+    top: -10px;
+    z-index: 1000;
+    animation: confetti-fall 3s linear forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery 📸</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">📸 Memories Gallery</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+                <li><a href="the-trio.html" class="nav-link">The Trio</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="letters.html" class="nav-link">Letters</a></li>
+                <li><a href="wishes.html" class="nav-link">Wishes</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="gallery-content">
+            <h1 class="gallery-title">Photo Gallery</h1>
+            <p class="gallery-subtitle">Every picture tells a story of our beautiful friendship</p>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <h2>Add Your Memories</h2>
+            <form class="upload-form" id="upload-form">
+                <div class="form-group">
+                    <label for="image-upload">Choose Photo:</label>
+                    <input type="file" id="image-upload" accept="image/*" multiple>
+                </div>
+                <div class="form-group">
+                    <label for="image-category">Category:</label>
+                    <select id="image-category">
+                        <option value="school-days">School Days</option>
+                        <option value="birthdays">Birthdays</option>
+                        <option value="trips">Trips & Outings</option>
+                        <option value="random-fun">Random Fun</option>
+                        <option value="special-moments">Special Moments</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="image-caption">Caption:</label>
+                    <input type="text" id="image-caption" placeholder="Add a sweet memory...">
+                </div>
+                <button type="submit" class="upload-btn">Upload Memory</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- School Days -->
+            <div class="category-section">
+                <h2 class="category-title">Religious Us 🕉</h2>
+                <div class="gallery-grid" id="school-days-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/t11.jpg" alt="School memory" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Khatu Shyam Darshan"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/b14.jpg" alt="School memory" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Ladli Ji Darshan"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/sm4.jpg" alt="School memory" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Ghar ka kirtan"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Birthdays -->
+            <div class="category-section">
+                <h2 class="category-title">Birthdays 🎂</h2>
+                <div class="gallery-grid" id="birthdays-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/Kb1.jpg" alt="Birthday celebration" class="gallery-img">
+                        <div class="overlay">
+                            <p>"18th birthday surprise"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/bc1.jpg" alt="Birthday celebration" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Cake fight aftermath"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/kb2.jpg" alt="Birthday celebration" class="gallery-img">
+                        <div class="overlay">
+                            <p>"After Celebration pics"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trips -->
+            <div class="category-section">
+                <h2 class="category-title">Outings 🏖️</h2>
+                <div class="gallery-grid" id="trips-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/p5.jpg" alt="Trip memory" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Park chle gye the" </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/t2.jpg" alt="Trip memory" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Expo Visit"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/t33.jpg" alt="Trip memory" class="gallery-img">
+                        <div class="overlay">
+                            <p>"First Open Mic"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Random Fun -->
+            <div class="category-section">
+                <h2 class="category-title">Random Fun 📸</h2>
+                <div class="gallery-grid" id="random-fun-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/rf1.jpg" alt="Fun moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Study break selfies"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/rf2.jpg" alt="Fun moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Foodie adventures"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/rf3.jpg" alt="Fun moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Some Pagal pan "</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Moments -->
+            <div class="category-section">
+                <h2 class="category-title">Some special moments 🌟</h2>
+                <div class="gallery-grid" id="special-moments-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/b13.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Diwali Celebrations"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/b12.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Birthday Selfies"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/b15.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Diwali funn"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="category-section">
+                <h2 class="category-title">Crazy Fun 🤪</h2>
+                <div class="gallery-grid" id="special-moments-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/p1.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Thela pact"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/p3.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Us one day before our board exam"</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/p88.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Evening walk pe chlooo"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="category-section">
+                <h2 class="category-title">Random days 🤔</h2>
+                <div class="gallery-grid" id="special-moments-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/p77.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>"Aaja photos khichte hai "</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/r11.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>" Sath me tution jana "</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/p6.jpg" alt="Special moment" class="gallery-img">
+                        <div class="overlay">
+                            <p>" Ek dusre ke ghr pe pde rhna "</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Every photo tells a story of our beautiful friendship 📸💕</p>
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

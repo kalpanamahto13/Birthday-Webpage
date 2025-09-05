@@ -1,0 +1,340 @@
+/* The Trio Page Styles */
+.trio-hero {
+    min-height: 50vh;
+    background: linear-gradient(135deg, #E6E6FA 0%, #F0FFF0 50%, #FFE5E5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.trio-content h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: var(--rose-gold);
+    margin-top: 2rem;
+}
+
+.section-title button{
+    border-radius: 20px;
+    padding: 15px;
+    border-color: transparent;
+    
+    color: var(--rose-gold);
+}
+
+.section-title button:hover{
+    box-shadow: var(--glow-shadow);;
+}
+
+.trio-content h2 {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.trio-content p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Trio Introduction */
+.trio-intro {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.trio-image{
+    width: 320px;
+    height: 200px;
+}
+
+.trio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Profiles Section */
+.profiles-section {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.profile-card {
+    background: var(--gradient-card);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--glow-shadow);
+}
+
+.profile-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover .profile-img {
+    transform: scale(1.1);
+}
+
+.profile-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(183, 110, 121, 0.8));
+    color: white;
+    padding: 2rem 1rem 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover .profile-overlay {
+    transform: translateY(0);
+}
+
+.profile-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info {
+    padding: 2rem;
+}
+
+.profile-info h4 {
+    color: var(--rose-gold);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.profile-info p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.traits {
+    list-style: none;
+    padding: 0;
+}
+
+.traits li {
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Trio Bond Section */
+.trio-bond {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.bond-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: var(--gradient-card);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: var(--soft-shadow);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow-shadow);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--rose-gold);
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #666;
+}
+
+/* Memories Section */
+.memories-section {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.memories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.memory-card {
+    background: var(--gradient-card);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.3s ease;
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow-shadow);
+}
+
+.memory-card h3 {
+    color: var(--rose-gold);
+    margin-bottom: 1rem;
+}
+
+.memory-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Memories Gallery Section */
+.memories-gallery-section {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.memories-gallery-section .section-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: var(--rose-gold);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.memories-gallery-section .gallery-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.memories-gallery-section .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.memories-gallery-section .gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memories-gallery-section .gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow-shadow);
+}
+
+.memories-gallery-section .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.memories-gallery-section .gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.memories-gallery-section .gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(183, 110, 121, 0.9));
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.memories-gallery-section .gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.memories-gallery-section .gallery-overlay p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profiles-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .trio-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .trio-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .memories-gallery-section .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .memories-gallery-section .section-title {
+        font-size: 2rem;
+    }
+}

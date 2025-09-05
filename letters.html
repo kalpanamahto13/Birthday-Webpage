@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letters & Notes💌</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="letters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">💌 Letters & Notes</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+                <li><a href="the-trio.html" class="nav-link">The Trio</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="letters.html" class="nav-link active">Letters</a></li>
+                <li><a href="wishes.html" class="nav-link">Wishes</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="letters-hero">
+        <div class="letters-content">
+            <h1 class="letters-title">Letters & Notes</h1>
+            <p class="letters-subtitle">Heartfelt messages and sweet memories</p>
+        </div>
+    </section>
+
+    <!-- Write Letter Section -->
+    <section class="write-letter">
+        <div class="container">
+            <h2>Write a Letter</h2>
+            <form class="letter-form" id="letter-form">
+                <div class="form-group">
+                    <label for="letter-title">Title:</label>
+                    <input type="text" id="letter-title" placeholder="A sweet title for your letter..." required>
+                </div>
+                <div class="form-group">
+                    <label for="letter-text">Your Message:</label>
+                    <textarea id="letter-text" rows="6" placeholder="Write your heartfelt message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Letter</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Letters Display Section -->
+    <section class="letters-display">
+        <div class="container">
+            <h2>Letters & Messages</h2>
+            <div class="letters-container" id="letters-container">
+                
+                <!-- Sample Letters -->
+                <div class="letter-card">
+                    <h3>To My Dearest Friend</h3>
+                    <p>Dear Best Friend,</p>
+                    <p>As I sit here thinking about our journey together, my heart is so full. From that first day in tuition class when we were just awkward 7th graders to today, you've been my constant.</p>
+                    <p>Thank you for every laugh, every tear, every late-night call, and every inside joke. Thank you for being my safe place, my partner in crime, and my sister from another mother.</p>
+                    <p>Here's to many more years of friendship, love, and memories. I love you more than words can express.</p>
+                    <p>Forever yours,<br>Your annoying but loving friend 💕</p>
+                    <small>Posted on: Today</small>
+                </div>
+
+                <div class="letter-card">
+                    <h3>Remember When...</h3>
+                    <p>Remember when we tried to study for the physics exam but ended up watching movies instead? And somehow we both passed! 😂</p>
+                    <p>Or that time we got lost on our way to the mall and ended up discovering that bekar sa chowmein wala ?  wrong turn ever!</p>
+                    <p>Every memory with you is my favorite memory. Can't wait to make more!</p>
+                    <small>Posted on: Yesterday</small>
+                </div>
+
+                <div class="letter-card">
+                    <h3>Thank You</h3>
+                    <p>Thank you for being the friend who:</p>
+                    <ul>
+                        <li>Always picks up the phone at 2 AM</li>
+                        <li>Knows my coffee order by heart</li>
+                        <li>Remembers every embarrassing story but never judges</li>
+                        <li>Makes every ordinary day feel special</li>
+                    </ul>
+                    <p>You're not just my friend, you're my chosen family. Happy Birthday! 🎂</p>
+                    <small>Posted on: Last week</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <div class="container">
+            <h2>Sweet Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <img src="assets/flirty.jpg" alt="Sweet message" class="screenshot-img">
+                    <p>"Your all time flirtyyyy msgesss "</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/ld.jpg" alt="Funny chat" class="screenshot-img">
+                    <p>"Our long distance wale video calls"</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/bd.jpg" alt="Birthday wishes" class="screenshot-img">
+                    <p>"Your birthday wishes that I'll treasure forever"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Every word written with love 💕</p>
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

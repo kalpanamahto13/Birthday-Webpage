@@ -1,0 +1,183 @@
+/* Letters Page Styles */
+.letters-hero {
+    min-height: 50vh;
+    background: linear-gradient(135deg, #FFF8DC 0%, #FFE5E5 50%, #E6E6FA 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.letters-content h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: var(--rose-gold);
+    margin-bottom: 1rem;
+}
+
+.letters-content p {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+/* Write Letter Section */
+.write-letter {
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.letter-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--gradient-card);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--soft-shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--rose-gold);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #FFE5E5;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--rose-gold);
+}
+
+.submit-btn {
+    background: var(--gradient-bg);
+    color: var(--rose-gold);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--soft-shadow);
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--glow-shadow);
+}
+
+/* Letters Display Section */
+.letters-display {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.letters-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.letter-card {
+    background: var(--gradient-card);
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.3s ease;
+    border-left: 4px solid var(--rose-gold);
+}
+
+.letter-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--glow-shadow);
+}
+
+.letter-card h3 {
+    color: var(--rose-gold);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.letter-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.letter-card small {
+    color: #999;
+    font-style: italic;
+}
+
+/* Screenshots Section */
+.screenshots-section {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.screenshot-card {
+    background: var(--gradient-card);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.3s ease;
+}
+
+.screenshot-card:hover {
+    transform: translateY(-5px);
+}
+
+.screenshot-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.screenshot-card p {
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    p{
+        font-size: 0.8rem;
+    }
+    li{
+        font-size: 0.8rem;
+    }
+    .letters-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .letter-form,
+    .screenshots-grid {
+        margin: 0 1rem;
+    }
+}

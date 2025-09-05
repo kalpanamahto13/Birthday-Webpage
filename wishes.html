@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wishes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🎂 Birthday Wishes</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+                <li><a href="the-trio.html" class="nav-link">The Trio</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="letters.html" class="nav-link">Letters</a></li>
+                <li><a href="wishes.html" class="nav-link active">Wishes</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="wishes-hero">
+        <div class="wishes-content">
+            <h1 class="wishes-title">Birthday Wishes</h1>
+            <p class="wishes-subtitle">Messages from everyone who loves you</p>
+        </div>
+    </section>
+
+    <!-- Add Wish Section -->
+    <section class="add-wish">
+        <div class="container">
+            <h2>Leave a Birthday Wish</h2>
+            <form class="wish-form" id="wish-form">
+                <div class="form-group">
+                    <label for="wisher-name">Your Name:</label>
+                    <input type="text" id="wisher-name" placeholder="Your beautiful name..." required>
+                </div>
+                <div class="form-group">
+                    <label for="wish-text">Your Wish:</label>
+                    <textarea id="wish-text" rows="4" placeholder="Write your birthday wish here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Wish</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Wishes Display Section -->
+    <section class="wishes-display">
+        <div class="container">
+            <h2>All the Love</h2>
+            <div class="wishes-container" id="wishes-container">
+                
+                <!-- Sample Wishes -->
+                <div class="wish-card">
+                    <h3>From Kalpana</h3>
+                    <p>Happy Birthday to the most amazing person I know! Thank you for being my rock, my laughter, and my safe place. Here's to another year of beautiful memories together. I love you more than words can say! 💕</p>
+                    <small>From: Your Partner in Crime</small>
+                </div>
+
+                <div class="wish-card">
+                    <h3>From Srishti</h3>
+                    <p>To the girl who makes every day brighter - Happy Birthday! Your kindness, strength, and beautiful soul inspire me every day. So grateful for our friendship! 🌸</p>
+                    <small>From: Srishti</small>
+                </div>
+
+                <div class="wish-card">
+                    <h3>From Family</h3>
+                    <p>Happy Birthday to our precious girl! Watching you grow into the amazing person you are today has been the greatest joy. We love you more than you'll ever know! ❤️</p>
+                    <small>From: Mom & Dad</small>
+                </div>
+
+                <div class="wish-card">
+                    <h3>From School Friends</h3>
+                    <p>Happy Birthday! Remember all those crazy school days? From tuition classes to graduation, you've been the best friend anyone could ask for. Miss you! 🎓</p>
+                    <small>From: School Gang</small>
+                </div>
+
+                <div class="wish-card">
+                    <h3>From College Friends</h3>
+                    <p>Happy Birthday to the life of every party! Thanks for making college so much fun. Can't wait for more adventures together! 🎉</p>
+                    <small>From: College Squad</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Messages Section -->
+    <section class="special-messages">
+        <div class="container">
+            <h2>Special Birthday Messages</h2>
+            <div class="messages-grid">
+                <div class="message-card">
+                    <div class="message-icon">🎂</div>
+                    <h3>May your day be filled with love</h3>
+                    <p>Every moment as beautiful as you are</p>
+                </div>
+                <div class="message-card">
+                    <div class="message-icon">✨</div>
+                    <h3>May all your dreams come true</h3>
+                    <p>This year brings everything you wish for</p>
+                </div>
+                <div class="message-card">
+                    <div class="message-icon">💝</div>
+                    <h3>May you feel loved every day</h3>
+                    <p>Because you deserve all the love in the world</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>May your birthday be as special as you are to all of us 🎂💕</p>
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
